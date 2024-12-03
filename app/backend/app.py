@@ -69,5 +69,5 @@ async def create_app():
 
 if __name__ == "__main__":
     host = "localhost"
-    port = 40100 # updated per Konrad
+    port = 8765
     web.run_app(create_app(), host=host, port=port)
