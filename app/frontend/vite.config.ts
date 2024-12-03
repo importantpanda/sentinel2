@@ -8,7 +8,7 @@ export default defineConfig({
     build: {
         outDir: "../backend/static",
         emptyOutDir: true,
-        sourcemap: true
+        sourcemap: false // TODO this has to do with Azure search not being set up
     },
     resolve: {
         preserveSymlinks: true,
@@ -19,7 +19,7 @@ export default defineConfig({
     server: {
         proxy: {
             "/realtime": {
-                target: "ws://localhost:8765",
+                target: "ws://localhost:40100",
                 ws: true,
                 rewriteWsOrigin: true
             }
