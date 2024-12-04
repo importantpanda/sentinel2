@@ -66,7 +66,7 @@ function App() {
     const { t } = useTranslation();
 
     // Use the custom WebSocket hook
-    useWebSocket("ws://localhost:40100/realtime", (event: { data: any }) => {
+    useWebSocket("ws://192.168.1.10:40100/realtime", (event: { data: any }) => {
         console.log("WebSocket message received:", event.data);
         // Handle the WebSocket message here
     });

@@ -4,7 +4,7 @@ function OutputBox() {
     const [output, setOutput] = useState("");
 
     useEffect(() => {
-        const eventSource = new EventSource("http://localhost:40100");
+        const eventSource = new EventSource("http://192.168.1.10:40100");
         eventSource.onmessage = event => {
             setOutput(prevOutput => prevOutput + "\n" + event.data);
         };
