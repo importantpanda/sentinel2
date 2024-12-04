@@ -11,7 +11,7 @@ import OutputBox from "@/components/ui/OutputBox"; // Import OutputBox
 import useRealTime from "@/hooks/useRealtime";
 import useAudioRecorder from "@/hooks/useAudioRecorder";
 import useAudioPlayer from "@/hooks/useAudioPlayer";
-import useWebSocket from "@/hooks/useWebSocket"; // TODO TAKE OUT IF DOESN'T WORK
+// import useWebSocket from "@/hooks/useWebSocket"; // TODO TAKE OUT IF DOESN'T WORK
 
 import { GroundingFile, ToolResult } from "./types";
 
@@ -66,10 +66,10 @@ function App() {
     const { t } = useTranslation();
 
     // Use the custom WebSocket hook
-    useWebSocket("ws://192.168.1.10:40100/realtime", (event: { data: any }) => {
-        console.log("WebSocket message received:", event.data);
-        // Handle the WebSocket message here
-    });
+    // useWebSocket("ws://192.168.1.10:40100/realtime", (event: { data: any }) => {
+    //     console.log("WebSocket message received:", event.data);
+    //      // Handle the WebSocket message here
+    // });
 
     return (
         <div className="flex min-h-screen flex-col bg-gray-100 text-gray-900">
