@@ -6,7 +6,6 @@ import { Button } from "@/components/ui/button";
 import { GroundingFiles } from "@/components/ui/grounding-files";
 import GroundingFileView from "@/components/ui/grounding-file-view";
 import StatusMessage from "@/components/ui/status-message";
-import OutputBox from "@/components/ui/OutputBox"; // Import OutputBox
 
 import useRealTime from "@/hooks/useRealtime";
 import useAudioRecorder from "@/hooks/useAudioRecorder";
@@ -101,10 +100,11 @@ function App() {
                 </div>
                 <GroundingFiles files={groundingFiles} onSelected={setSelectedFile} />
             </main>
-            <OutputBox /> {/* Add OutputBox component here */}
+
             <footer className="py-4 text-center">
                 <p>{t("app.footer")}</p>
             </footer>
+
             <GroundingFileView groundingFile={selectedFile} onClosed={() => setSelectedFile(null)} />
         </div>
     );
