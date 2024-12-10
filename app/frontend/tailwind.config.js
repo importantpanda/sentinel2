@@ -57,6 +57,6 @@ export default {
                 "3xl": ["2rem", { lineHeight: "2.8rem" }]
             }
         }
-    },
-    plugins: [require("tailwindcss-animate")]
+    }
+    //    plugins: [require("tailwindcss-animate")]
 };
