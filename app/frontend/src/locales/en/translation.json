@@ -1,13 +1,13 @@
 {
     "app": {
-        "title": "Talk to your data",
-        "footer": "Built with Azure AI Search + Azure OpenAI",
+        "title": "Athena AI",
+        "footer": "MX-15D EO/IR Sensor Voice C2",
         "stopRecording": "Stop recording",
         "startRecording": "Start recording",
         "stopConversation": "Stop conversation"
     },
     "status": {
-        "notRecordingMessage": "Ask anything about Contoso employee benefits",
+        "notRecordingMessage": "Awaiting your EO/IR Sensor Command",
         "conversationInProgress": "Conversation in progress"
     },
     "history": {
