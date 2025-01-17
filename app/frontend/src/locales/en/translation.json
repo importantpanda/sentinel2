@@ -7,7 +7,7 @@
         "stopConversation": "Stop conversation"
     },
     "status": {
-        "notRecordingMessage": "Awaiting your EO/IR Sensor Command",
+        "notRecordingMessage": "Ask anything about Contoso employee benefits",
         "conversationInProgress": "Conversation in progress"
     },
     "history": {
